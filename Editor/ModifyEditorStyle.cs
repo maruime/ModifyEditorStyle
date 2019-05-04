@@ -247,7 +247,7 @@ public class ModifyEditorStyle
 #if UNITY_2018_3_OR_NEWER
     private class ModifyEditorStyleProvider : SettingsProvider
     {
-        public ProtobufUnitySettingsProvider(string path, SettingsScope scope = SettingsScope.User)
+        public ModifyEditorStyleProvider(string path, SettingsScope scope = SettingsScope.User)
         : base(path, scope)
         { }
 
