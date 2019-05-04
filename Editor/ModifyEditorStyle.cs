@@ -247,8 +247,8 @@ public class ModifyEditorStyle
 #if UNITY_2018_3_OR_NEWER
     private class ModifyEditorStyleProvider : SettingsProvider
     {
-        public ModifyEditorStyleProvider(string path, SettingsScopes scopes = SettingsScopes.Any)
-        : base(path, scopes)
+        public ProtobufUnitySettingsProvider(string path, SettingsScope scope = SettingsScope.User)
+        : base(path, scope)
         { }
 
         public override void OnGUI(string searchContext)
